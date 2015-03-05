@@ -13,6 +13,11 @@
 		on d.deptno = e.deptno
 		WHERE d.deptno = #{deptno}
 	</select>
+	<select id="selectAll" resultType="webapp.model.Dept">
+		SELECT *
+		FROM dept
+	</select>
+	
 	
 	<resultMap type="webapp.model.Dept" id="deptWithEmps">
 		<id property="deptno" column="deptno" />

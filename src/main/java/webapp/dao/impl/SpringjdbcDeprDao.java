@@ -108,13 +108,20 @@ class DeptResultSetExtractor implements ResultSetExtractor<Dept>{
 
 	@Override
 	public List<Dept> selectAll(){
-		// TODO Auto-generated method stub
-		return null;
+		log.info("##########################");
+		log.info("selectAll()");
+		log.info("##########################");
+		
+		JdbcTemplate template = new JdbcTemplate(dataSource);
+	
+		return template.query(SELECT_ALL, new BeanPropertyRowMapper<Dept>(Dept.class));
 	}
 
 	@Override
 	public List<Dept> selectAllwithEmps(){
-		// TODO Auto-generated method stub
+		log.info("##########################");
+		log.info("selectAllwithEmps()");
+		log.info("##########################");
 		return null;
 	}
 
