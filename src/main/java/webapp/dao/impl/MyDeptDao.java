@@ -23,7 +23,7 @@ import webapp.model.Dept;
 import webapp.model.Emp;
 import webapp.util.GlobalVars;
 
-public class jdbcDeptDao implements DeptDao {
+public class MyDeptDao implements DeptDao {
 
 	
 //	static Logger log = Logger.getLogger(jdbcDeptDao.class);

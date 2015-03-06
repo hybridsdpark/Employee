@@ -118,7 +118,7 @@ class DeptResultSetExtractor implements ResultSetExtractor<Dept>{
 	}
 
 	@Override
-	public List<Dept> selectAllwithEmps(){
+	public List<Dept> selectAllWithEmps(){
 		log.info("##########################");
 		log.info("selectAllwithEmps()");
 		log.info("##########################");
