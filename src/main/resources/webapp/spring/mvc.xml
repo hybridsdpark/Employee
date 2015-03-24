@@ -11,6 +11,9 @@
 
 	<mvc:annotation-driven/>
 	
+<mvc:view-controller path="/calendar" view-name="calendar"/>
+		
+	
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/desktop/"/>
 	<property name="suffix" value=".jsp"/>
